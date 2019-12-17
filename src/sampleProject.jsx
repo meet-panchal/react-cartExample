@@ -1,5 +1,4 @@
 // const { Component } = React;
-import React, { Component } from "react";
 
 // Empty bazar store is initialized on first import.
 const { register, poke } = bazar;
@@ -172,4 +171,4 @@ class App extends Component {
   }
 }
 
-// ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

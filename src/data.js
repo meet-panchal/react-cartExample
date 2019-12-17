@@ -38,7 +38,7 @@ const data = {
         {
           id: 3,
           name: "Chicken Tikka Salad",
-          description: "",
+          description: "Chicken Tikka Salad made from fresh chicken",
           price: 15,
           nonVeg: "No",
           icon_id: '["1"]',
