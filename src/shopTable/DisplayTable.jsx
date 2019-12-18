@@ -3,6 +3,7 @@ import QantityChecker from "../components/QantityChecker";
 import parentMenu from "../data";
 import "./DisplayTable.css";
 import CartTotal from "../components/CartTotal";
+
 export class DisplayTable extends Component {
   state = {
     menu: parentMenu.menu.map(category =>
@@ -76,20 +77,31 @@ export class DisplayTable extends Component {
 
   render() {
     return (
-      <div>
-        <QantityChecker
-          data={this.state.menu}
-          increment={this.increment}
-          decrement={this.decrement}
-          reset={this.reset}
-        />
-        {this.incart().length > 0 ? (
-          <CartTotal
-            data={this.incart()}
-            increment={this.increment}
-            decrement={this.decrement}
-          />
-        ) : null}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-12">
+            <h1>Add to cart</h1>
+          </div>
+          <div className="col-md-6">
+            <h2>Menu</h2>
+            <QantityChecker
+              data={this.state.menu}
+              increment={this.increment}
+              decrement={this.decrement}
+              reset={this.reset}
+            />
+          </div>
+          <div className="col-md-6">
+            <h2>Your Cart</h2>
+            {this.incart().length > 0 ? (
+              <CartTotal
+                data={this.incart()}
+                increment={this.increment}
+                decrement={this.decrement}
+              />
+            ) : null}
+          </div>
+        </div>
       </div>
     );
   }

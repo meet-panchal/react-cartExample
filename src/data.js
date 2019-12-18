@@ -23,7 +23,7 @@ const data = {
         },
         {
           id: 2,
-          name: "Brinjol Cottage & cheese salad",
+          name: "Brinjol cottage cheese salad",
           description: "Deep fried brinjol and cottage cheese",
           price: 15,
           nonVeg: "No",

@@ -9,9 +9,9 @@ import {
 const QantityChecker = props => {
   return (
     <div className="table-responsive">
-      <table className="table table-dark">
+      <table className="table table-info">
         <thead>
-          <tr>
+          <tr className="center">
             <th scope="col">Product</th>
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
@@ -24,7 +24,7 @@ const QantityChecker = props => {
               <tr key={foodItem.id}>
                 <th scope="row">
                   <p>{foodItem.name}</p>
-                  <p>{foodItem.description}</p>
+                  <small className="mt-0">{foodItem.description}</small>
                 </th>
                 <td className="center">${foodItem.price}</td>
                 <td className="center">{foodItem.quantity}</td>

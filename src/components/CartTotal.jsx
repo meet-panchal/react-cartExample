@@ -9,9 +9,9 @@ const CartTotal = props => {
   });
   return (
     <div className="table-responsive">
-      <table className="table table-hover">
+      <table className="table table-hover table-primary">
         <thead>
-          <tr>
+          <tr className="center">
             <th scope="col">Product</th>
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
@@ -31,7 +31,7 @@ const CartTotal = props => {
                 />
                 {checkedItem.quantity}
                 <FontAwesomeIcon
-                  className="mx-3"
+                  className="ml-3"
                   icon={faMinusCircle}
                   onClick={() => props.decrement(checkedItem)}
                 />
