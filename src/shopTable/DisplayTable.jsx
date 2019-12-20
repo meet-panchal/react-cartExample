@@ -80,7 +80,9 @@ export class DisplayTable extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-12">
-            <h1>Add to cart</h1>
+            <h1 className="navbar navbar-light bg-warning sticky-top">
+              Add to cart
+            </h1>
           </div>
           <div className="col-md-6">
             <h2>Menu</h2>

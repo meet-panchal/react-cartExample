@@ -1,11 +1,8 @@
-/* table>thead>tr>th {
-    text-align: center !important;
-} */
-
 .center {
     text-align: center !important;
 }
 
-/* h1 {
+.banner {
     display: block;
-} */
+    background-color: burlywood;
+}
