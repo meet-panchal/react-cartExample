@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 import "../components/CartTotal.css";
+
 const CartTotal = props => {
   let grandTotal = 0;
   props.data.forEach(item => {
