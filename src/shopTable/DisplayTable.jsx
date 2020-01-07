@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import QantityChecker from "../components/QantityChecker";
+import CartTotal from "../components/CartTotal";
 import parentMenu from "../data";
 import "./DisplayTable.css";
-import CartTotal from "../components/CartTotal";
 
 export class DisplayTable extends Component {
   state = {

@@ -38,11 +38,13 @@ const QantityChecker = props => {
                     className="mx-3"
                     icon={faMinusCircle}
                     onClick={() => props.decrement(foodItem)}
+                    color={foodItem.quantity === 0 ? "gray" : "black"}
                   />
                   <FontAwesomeIcon
                     className="ml-3"
                     icon={faTimes}
                     onClick={() => props.reset(foodItem)}
+                    color={foodItem.quantity > 0 ? "red" : "black"}
                   />
                 </td>
               </tr>
