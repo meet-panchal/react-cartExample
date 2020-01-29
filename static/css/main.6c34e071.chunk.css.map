@@ -1,0 +1,1 @@
+{"version":3,"sources":["DisplayTable.css"],"names":[],"mappings":"AAAA,QACI,2BACJ,CAEA,QACI,aAAc,CACd,wBACJ","file":"main.6c34e071.chunk.css","sourcesContent":[".center {\n    text-align: center !important;\n}\n\n.banner {\n    display: block;\n    background-color: burlywood;\n}"]}
