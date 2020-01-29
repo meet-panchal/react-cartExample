@@ -27,14 +27,15 @@ const CartTotal = props => {
               <td className="center">
                 <FontAwesomeIcon
                   className="mr-3"
-                  icon={faPlusCircle}
-                  onClick={() => props.increment(checkedItem)}
-                />
-                {checkedItem.quantity}
-                <FontAwesomeIcon
-                  className="ml-3"
                   icon={faMinusCircle}
                   onClick={() => props.decrement(checkedItem)}
+                />
+                {checkedItem.quantity}
+
+                <FontAwesomeIcon
+                  className="ml-3"
+                  icon={faPlusCircle}
+                  onClick={() => props.increment(checkedItem)}
                 />
               </td>
               <td className="center">
